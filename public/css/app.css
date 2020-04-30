@@ -2,3 +2,11 @@
   padding-top: 0px;
 }
 
+#nested-comment {
+  margin-top: 60px;
+}
+
+.comment-reply-container {
+  display: none;
+}
+
