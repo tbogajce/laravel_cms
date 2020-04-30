@@ -3,13 +3,13 @@
 @section('content')
 
     <h1>Edit Post</h1>
-    
+
     <div class="row">
 
         <div class="col-sm-6">
             <img src="{{$post->photo ? $post->photo->file : '/images/default.png'}}" alt="" class="img-responsive">
         </div>
-        
+
         <div class="col-sm-6">
             {!! Form::model($post, ['method'=>'PATCH', 'action'=>['AdminPostsController@update', $post->id], 'files'=>true]) !!}
 
