@@ -20,6 +20,7 @@ class CreatePostsTable extends Migration
             $table->integer('photo_id')->unsigned()->index();
             $table->string('title');
             $table->text('body');
+            $table->string('slug');
             $table->timestamps();
 
             // adding foreign key and deleting every post of the user if he is deleted (cascade)
