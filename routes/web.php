@@ -41,7 +41,7 @@ Route::group(['middleware'=>'admin'], function() {
 
 });
 
-Route::get('/post/{id}', ['as'=>'home.post', 'uses'=>'AdminPostsController@post']);
+Route::get('/post/{id}', ['as'=>'home.post', 'uses'=>'HomeController@post']);
 
 Route::group(['middleware'=>'auth'], function() {
 
